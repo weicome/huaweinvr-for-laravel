@@ -1,0 +1,22 @@
+{
+    "name": "chenwei/huaweinvr-for-laravel",
+    "description": "hua wei nvr system extend package",
+    "authors": [
+        {
+            "name": "wei",
+            "email": "407888190@qq.com"
+        }
+    ],
+    "keywords": [
+        "nvr",
+        "huawei",
+        "huaweinvr"
+    ],
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Wei\\HuaweiNvr": "src/"
+        }
+    }
+}
