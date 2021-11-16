@@ -1,6 +1,6 @@
 <?php
 
-namespace Wei\HuaweiNvr\Command;
+namespace Wei\HuaweiNvr\Console;
 
 use Wei\HuaweiNvr\Server\NVRServer;
 use Illuminate\Console\Command;
