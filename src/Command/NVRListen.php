@@ -2,7 +2,7 @@
 
 namespace Wei\HuaweiNvr\Command;
 
-use Wei\HuaweiNvr\Server\NVRService;
+use Wei\HuaweiNvr\Server\NVRServer;
 use Illuminate\Console\Command;
 
 class NVRListen extends Command
@@ -40,7 +40,7 @@ class NVRListen extends Command
     {
         try {
             $this->info("启动NVR监听...");
-            app(NVRService::class)->listen();
+            app(NVRServer::class)->listen();
         } catch (\Throwable $th) {
             //throw $th;
             $this->error('错误信息:' . $th->getMessage());

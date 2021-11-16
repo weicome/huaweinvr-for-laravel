@@ -6,7 +6,7 @@ use Wei\HuaweiNvr\Client\NVRClient;
 use Wei\HuaweiNvr\NVRInterface;
 use Illuminate\Support\Facades\Log;
 
-class NVRService
+class NVRServer
 {
     private $client;
     private $running;
