@@ -3,7 +3,7 @@
 namespace Wei\HuaweiNvr\Server;
 
 use Wei\HuaweiNvr\Client\NVRClient;
-use Wei\HuaweiNvr\NVREventInterface;
+use Wei\HuaweiNvr\NVRInterface;
 use Illuminate\Support\Facades\Log;
 
 class NVRService
@@ -83,7 +83,7 @@ class NVRService
                         try {
                             dispatch(function () use ($event, $data) {
                                 dump('分发事件'.$event);
-                                if(app($event) instanceof NVREventInterface) {
+                                if(app($event) instanceof NVRInterface) {
                                     app($event)->handler(['event' => $data], $this->channel);
                                 }else{
                                     Log::info($event.': 未实现接口');
@@ -114,8 +114,8 @@ class NVRService
                             foreach ($this->services as $event) {
                                 try {
                                     dump('分发图片'.$event);
-                                    if(app($event) instanceof NVREventInterface) {
-                                        app($event)->handler(['picture' => $data], $this->channel);
+                                    if(app($event) instanceof NVRInterface) {
+                                        app($event)->handler(['picture' => $data], $this->channel,$this);
                                     }else{
                                         Log::info($event.': 未实现接口');
                                     }
