@@ -1,8 +1,9 @@
 ### 华为NVR-for-laravel接入包
 
 #### 1.安装到项目
+```
 composer require weicome/huaweinvr-for-laravel
-
+```
 #### 2.添加服务到config/app.php
 在 providers 中添加
 ```
@@ -38,7 +39,9 @@ class Event implements NVRInterface{
 ```
 变量$event,记录了告警事件$event['event'], 和图片查询事件$event['picture']
 变量$channel,记录了管道数据 $channel['CH1'] => $channel['channel_name']
+$nvr服务对象本身,在请求图片是传递，可以调用getPlaybackPicture($pic_info = null)方法
 
 #### 6. 启动监听
-
-$ php artisan nvr:listen
+```
+$  php artisan nvr:listen
+```
