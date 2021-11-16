@@ -1,10 +1,10 @@
 <?php
 
-namespace Wei\HuaweiNvr\Server;
+namespace Verus\HuaweiNvr\Server;
 
-use Wei\HuaweiNvr\Client\NVRClient;
+use Verus\HuaweiNvr\Client\NVRClient;
+use Verus\HuaweiNvr\NVREventInterface;
 use Illuminate\Support\Facades\Log;
-use Wei\HuaweiNvr\NVREventInterface;
 
 class NVRService
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Wei\HuaweiNvr\Client;
+namespace Verus\HuaweiNvr\Client;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Http;

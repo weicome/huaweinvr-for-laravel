@@ -1,6 +1,6 @@
 <?php
 
-namespace Wei\HuaweiNvr;
+namespace Verus\HuaweiNvr;
 
 interface NVREventInterface
 {
