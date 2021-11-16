@@ -4,7 +4,7 @@
     "authors": [
         {
             "name": "wei",
-            "email": "407888190@qq.com"
+            "email": "weicome@sina.com"
         }
     ],
     "keywords": [
@@ -13,10 +13,15 @@
         "huaweinvr"
     ],
     "license": "MIT",
-    "require": {},
+    "require": {
+        "php": "^7.2.5|^8.0"
+    },
     "autoload": {
-        "psr-4": {
+        "psr-0": {
             "Wei\\HuaweiNvr": "src/"
+        },
+        "psr-4": {
+            "Wei\\HuaweiNvr\\": "/src"
         }
     }
 }

@@ -25,7 +25,10 @@ class HuaweiNvrServiceProvider extends ServiceProvider
     {
         //
         $this->publishes([
-            __DIR__ . '/config/huaweinvr.php' => 'config_path("huaweinvr.php")'
+            __DIR__ . '/config/huaweinvr.php' => config_path("huaweinvr.php")
+        ]);
+        $this->commands([
+            \Wei\HuaweiNvr\Command\NVRlisten::class,
         ]);
     }
 }
