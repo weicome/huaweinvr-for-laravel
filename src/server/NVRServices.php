@@ -19,6 +19,9 @@ class NVRService
         $this->initialize();
     }
 
+    /**
+     * 初始化
+     */
     protected function initialize()
     {
         $config = config('huaweinvr');
