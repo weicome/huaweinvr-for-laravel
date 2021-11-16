@@ -1,8 +1,8 @@
 <?php
 
-namespace Verus\HuaweiNvr\Command;
+namespace Wei\HuaweiNvr\Command;
 
-use Verus\HuaweiNvr\Server\NVRService;
+use Wei\HuaweiNvr\Server\NVRService;
 use Illuminate\Console\Command;
 
 class NVRListen extends Command

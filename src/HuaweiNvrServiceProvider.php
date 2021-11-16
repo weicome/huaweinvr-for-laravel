@@ -1,6 +1,6 @@
 <?php
 
-namespace Verus\HuaweiNvr;
+namespace Wei\HuaweiNvr;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -28,7 +28,7 @@ class HuaweiNvrServiceProvider extends ServiceProvider
             __DIR__ . '/config/huaweinvr.php' => config_path("huaweinvr.php")
         ]);
         $this->commands([
-            \Verus\HuaweiNvr\Command\NVRlisten::class,
+            \Wei\HuaweiNvr\Command\NVRlisten::class,
         ]);
     }
 }

@@ -18,10 +18,10 @@
     },
     "autoload": {
         "psr-0": {
-            "Verus\\HuaweiNvr": "src/"
+            "Wei\\HuaweiNvr": "src/"
         },
         "psr-4": {
-            "Verus\\HuaweiNvr\\": "/src"
+            "Wei\\HuaweiNvr\\": "/src"
         }
     }
 }
