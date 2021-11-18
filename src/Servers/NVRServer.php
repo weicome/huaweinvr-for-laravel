@@ -1,6 +1,6 @@
 <?php
 
-namespace Wei\HuaweiNvr\Server;
+namespace Wei\HuaweiNvr\Servers;
 
 use Wei\HuaweiNvr\Client\NVRClient;
 use Wei\HuaweiNvr\NVRInterface;
